@@ -21,3 +21,17 @@ export function addToCart(
   }
   setCart(cart);
 }
+
+export const totalPrice = (c: Cart): number => {
+  const products = c.products.reduce(
+    (sum, p) => sum + p.product.price * p.quantity,
+    0
+  );
+
+  return products;
+};
+
+export const numberOfItems = (c: Cart): number => {
+  const products = c.products.reduce((sum, p) => sum + p.quantity, 0);
+  return products;
+};

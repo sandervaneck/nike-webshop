@@ -7,3 +7,15 @@ export const town = "Seattle";
 export const region = "Washington";
 export const zipcode = "4123NI";
 export const country = "United States";
+
+export const aboutText = () => {
+  return (
+    <>
+      Nike all started in the 20th century
+      <br />
+      It was founded by Phil Knight.
+      <br />
+      Nike owes its fabulous Shoe quality to Bill Bowerman However...
+    </>
+  );
+};
